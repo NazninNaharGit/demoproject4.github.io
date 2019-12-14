@@ -1,0 +1,130 @@
+
+
+
+*{
+	margin:0;
+	padding:0;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+
+.btnClass{
+
+     /*width:200px;*/
+	height:100vh;
+	background-color:purple;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	
+	
+}
+
+a{   
+	padding:35px 90px;
+	border: 3px solid orange;
+	text-decoration:none;
+	color:#000000;
+	font-weight: bold;
+	font-size:2.5rem;
+	position:relative;
+	overflow: hidden;
+    
+}
+
+a:before{
+
+    content:"Awesome";
+	position:absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background-color:#000;
+	color:orange;
+	display:flex;
+	justify-content:center;
+	align-items: center;
+    /*border: 3px solid orange;*/
+    transform:translateY(-100%);
+    transition: all 0.8s linear;
+
+}
+
+a:hover:before{
+	transform:translateY(0);
+}
+
+/*css for test*/
+
+#box{
+
+	width: 300px;
+	height:350px;
+	margin: 0 auto;
+	position: relative;
+	top:100px;
+	overflow: hidden;
+}
+
+#box img{
+	width:100%;
+	height:100%;
+	display:block;
+} 
+
+#box1{
+
+	padding:3px;
+	box-sizing: border-box;
+	position: absolute;
+	top:-50px;
+	left:0px;
+	right:0;
+	background: red;
+    transition: 2s ; 
+    text-align: center; 
+	
+}
+#box:hover #box1 {
+
+
+	padding:3px;
+	box-sizing: border-box;
+	position: absolute;
+	top:300px;
+	left:0px;
+	right:0;
+	background: red;
+	text-align: center;
+
+}
+#box2 {
+
+
+	padding:3px;
+	box-sizing: border-box;
+	position: absolute;
+	bottom:-50px;
+	left:0px;
+	right:0;
+	background: red;
+    transition: 2s ; 
+    text-align: center; 
+}
+
+#box:hover #box2 {
+
+	padding:3px;
+	box-sizing: border-box;
+	position: absolute;
+	bottom:300px;
+	left:0px;
+	right:0;
+	background: red;
+    text-align: center; 
+
+}
+
+
